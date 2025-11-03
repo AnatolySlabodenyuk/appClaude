@@ -1,9 +1,6 @@
 package com.example.appclaude.entity;
 
 import jakarta.persistence.*;
-import org.hibernate.annotations.JdbcTypeCode;
-import org.hibernate.type.SqlTypes;
-
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -12,13 +9,13 @@ import java.util.UUID;
 public class Message {
 
     @Id
-    @Column(name = "msgUuid", nullable = false)
+    @Column(name = "\"msgUuid\"", nullable = false)
     private UUID msgUuid;
 
-    @Column(name = "head", nullable = false)
+    @Column(name = "\"head\"", nullable = false)
     private Boolean head;
 
-    @Column(name = "timeRq", nullable = false)
+    @Column(name = "\"timeRq\"", nullable = false)
     private LocalDateTime timeRq;
 
     public Message() {
